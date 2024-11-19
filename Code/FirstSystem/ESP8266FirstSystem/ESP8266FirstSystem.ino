@@ -11,14 +11,12 @@
 #include <Adafruit_SHT31.h>
 #include <BH1750FVI.h>
 
-// Khai báo các chân RX và TX cho espsoftwareserial
 #define RX_PIN D3 // D2
 #define TX_PIN D4 // D1
 
 const char ssid[] = "Knbond";
 const char pass[] = "ktwbqz88";
 
-// Tạo một đối tượng espsoftwareserial với tốc độ baud là 9600
 SoftwareSerial mySerial(RX_PIN, TX_PIN);
 
 Adafruit_SHT31 sht31 = Adafruit_SHT31();
